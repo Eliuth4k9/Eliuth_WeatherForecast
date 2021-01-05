@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+        crossorigin="anonymous"
+      />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-success d-flex justify-content-center">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard &#127759;</span>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 searchColumn">
+                <form>
+                    <h3>Search for a City:</h3>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
+                        <div class="input-group-append">
+                            <button type="submit" id="submitCity" class="btn btn-success fas fa-search"></button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="storedSearches" class="btn-group-vertical">
+
+                </div>
+                <div>
+                    <button class="btn btn-success mb-3" type="button" id="deleteButton">Clear history <span class=" fa fa-trash"></span></button>
+                </div>
+
+            </div>
+
+            <div class="col-md-9">
+                <div id="currentWeather">
+                    <h2>Current Weather</h2>
+                </div>
+                <div>
+                    <h3>5-Day Forecast:</h3>
+                    <div class="row" id="weatherForecast">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/scrript.js"></script>
+</body>
+
+</html>
